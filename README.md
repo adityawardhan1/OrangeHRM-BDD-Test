@@ -25,9 +25,7 @@ BDDTest/
 │ └── features/
 │ └── Login.feature
 
-bash
-Copy
-Edit
+
 
 ## 🔧 Setup Instructions
 
@@ -44,11 +42,8 @@ Maven
 ChromeDriver installed and set in PATH.
 
 Run the tests:
-
-bash
-Copy
-Edit
 mvn test
+
 Test Scenario
 Feature: Login functionality
 Scenario: Successful login to OrangeHRM
