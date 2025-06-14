@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: com.aditya.bdd.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.04 s -- in com.aditya.bdd.TestRunner
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 59.15 s <<< FAILURE! -- in com.aditya.bdd.TestRunner
+Add a new employee in OrangeHRM.Admin adds a new employee -- Time elapsed: 37.08 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for text ('Personal Details') to be present in element found by By.tagName: h6 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\ADITYA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51498}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51498/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c6d221179b8e6e5e6e81ad16adbcc5de
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.aditya.bdd.AddEmployeeSteps.verify_employee_added(AddEmployeeSteps.java:51)
+	at ✽.A new employee should be added successfully(file:///C:/Users/ADITYA/BDDTest/src/test/resources/features/AddEmployee.feature:9)
+
