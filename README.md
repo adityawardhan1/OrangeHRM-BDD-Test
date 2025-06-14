@@ -1,55 +1,78 @@
-# OrangeHRM BDD Test Automation
+🧪 OrangeHRM BDD Test Automation
+This project is a Behavior-Driven Development (BDD) test framework built using Java, Selenium WebDriver, Cucumber, and JUnit. It automates testing workflows on the OrangeHRM Demo Site, such as login and employee management.
 
-This project is a Behavior-Driven Development (BDD) framework using **Cucumber**, **Selenium WebDriver**, and **JUnit** for automated testing of the [OrangeHRM](https://opensource-demo.orangehrmlive.com/) login functionality.
-
-##  Tech Stack
-
-- Java
-- Maven
-- Selenium WebDriver
-- Cucumber (BDD)
-- JUnit
-
-##  Project Structure
-
-BDDTest/
-├── pom.xml
-├── src/
-│ ├── main/
-│ └── test/
-│ ├── java/
-│ │ └── com/aditya/bdd/
-│ │ ├── StepDefinitions.java
-│ │ └── TestRunner.java
-│ └── resources/
-│ └── features/
-│ └── Login.feature
-
-
-
-## 🔧 Setup Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/adityawardhan1/OrangeHRM-BDD-Test.git
-   cd OrangeHRM-BDD-Test
-Make sure you have:
-
-Java JDK 17+
+🚀 Tech Stack
+Java 17+
 
 Maven
 
-ChromeDriver installed and set in PATH.
+Cucumber (BDD)
+
+Selenium WebDriver
+
+JUnit
+
+ChromeDriver
+
+📁 Project Structure
+bash
+Copy
+Edit
+BDDTest/
+├── pom.xml
+└── src/
+    ├── main/
+    └── test/
+        ├── java/
+        │   └── com/aditya/bdd/
+        │       ├── StepDefinitions.java
+        │       ├── TestRunner.java
+        │       
+        └── resources/
+            └── features/
+                └── Login.feature
+⚙️ Setup Instructions
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/adityawardhan1/OrangeHRM-BDD-Test.git
+cd OrangeHRM-BDD-Test
+Ensure you have the following installed:
+
+Java JDK 17+
+
+Apache Maven
+
+Google Chrome (latest version)
+
+ChromeDriver (match your Chrome version) and added to your system PATH
 
 Run the tests:
+
+bash
+Copy
+Edit
 mvn test
-
-Test Scenario
+✅ Test Scenarios
+📄 Login.feature
+gherkin
+Copy
+Edit
 Feature: Login functionality
-Scenario: Successful login to OrangeHRM
 
-Given the user is on the login page
+  Scenario: Successful login to OrangeHRM
+    Given the user is on the login page
+    When the user enters valid credentials
+    Then the user should be redirected to the dashboard
+Additional scenarios such as Add Employee or Logout can be added to the same feature or as separate .feature files.
 
-When the user enters valid credentials
+📌 Notes
+You can view HTML test reports under:
 
-Then the user should be redirected to the dashboard
+bash
+Copy
+Edit
+target/cucumber-reports.html
+Use XPath and CSS Selectors smartly to handle dynamic elements.
